@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+ <TextView
+     android:id="@+id/text"
+     android:layout_width="407dp"
+     android:layout_height="325dp"
+     android:background="@color/black"
+     android:ems="10"
+     android:text="@string/_0"
+     android:textSize="60pt"
+     android:gravity="right|center"
+     android:inputType="textPersonName"
+     android:layout_marginBottom="7pt"
+     android:textColor="@color/white"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <Button
+     android:id="@+id/btnAC"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:layout_marginTop="327dp"
+     android:text="AC"
+     android:textSize="18sp"
+     android:onClick="acEvent"
+     android:textColor="@color/orange"
+     android:background="@color/black"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.009"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <Button
+     android:id="@+id/btnDelete"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:background="@color/black"
+     android:layout_marginTop="327dp"
+     android:text="C"
+     android:textSize="18sp"
+     android:textColor="@color/orange"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0"
+     app:layout_constraintStart_toEndOf="@+id/btnAC"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <Button
+     android:id="@+id/btnModules"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+      android:layout_marginTop="327dp"
+     android:text="%"
+     android:textSize="20dp"
+     android:background="@color/black"
+     android:textColor="@color/orange"
+     android:onClick="operatorpercentage"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toEndOf="@+id/btnDelete"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintHorizontal_bias="0" />
+
+ <Button
+     android:id="@+id/btnDivide"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="/"
+     android:textSize="22dp"
+     android:layout_marginTop="327dp"
+     android:background="@color/black"
+     android:textColor="@color/orange"
+     android:onClick="operatorEvent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toEndOf="@+id/btnModules"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintHorizontal_bias="0.039"/>
+
+ <Button
+     android:id="@+id/btn7"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="7"
+     android:textSize="20dp"
+     android:textColor="@color/white"
+     android:background="@color/black"
+     android:onClick="numberEvent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/btnAC"
+     app:layout_constraintHorizontal_bias="0.01"/>
+
+ <Button
+     android:id="@+id/btn8"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="8"
+     android:textSize="20dp"
+     android:textColor="@color/white"
+     android:background="@color/black"
+     android:onClick="numberEvent"
+     app:layout_constraintStart_toEndOf="@+id/btn7"
+     app:layout_constraintTop_toBottomOf="@+id/btnDelete"
+     app:layout_constraintHorizontal_bias="0"/>
+
+ <Button
+     android:id="@+id/btn9"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="9"
+     android:textSize="20dp"
+     android:textColor="@color/white"
+     android:onClick="numberEvent"
+     android:background="@color/black"
+     app:layout_constraintStart_toEndOf="@+id/btn8"
+     app:layout_constraintTop_toBottomOf="@+id/btnModules"
+     app:layout_constraintHorizontal_bias="0"/>
+
+ <Button
+     android:id="@+id/btnMultiply"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="*"
+     android:textSize="21dp"
+     android:onClick="operatorEvent"
+     android:background="@color/black"
+     android:textColor="@color/orange"
+
+     app:layout_constraintStart_toEndOf="@+id/btn9"
+     app:layout_constraintTop_toBottomOf="@+id/btnDivide"
+     app:layout_constraintHorizontal_bias="0"/>
+
+ <Button
+     android:id="@+id/btn4"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="4"
+     android:textSize="20dp"
+     android:onClick="numberEvent"
+     android:textColor="@color/white"
+     android:background="@color/black"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/btn7"
+     app:layout_constraintHorizontal_bias="0.01"/>
+
+ <Button
+     android:id="@+id/btn5"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="5"
+     android:onClick="numberEvent"
+     android:textSize="20dp"
+     android:textColor="@color/white"
+     android:background="@color/black"
+     app:layout_constraintStart_toEndOf="@+id/btn4"
+     app:layout_constraintTop_toBottomOf="@+id/btn8"
+     app:layout_constraintHorizontal_bias="0"/>
+
+ <Button
+     android:id="@+id/btn6"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:onClick="numberEvent"
+     android:text="6"
+     android:textColor="@color/white"
+     android:background="@color/black"
+     android:textSize="20dp"
+     app:layout_constraintStart_toEndOf="@+id/btn5"
+     app:layout_constraintTop_toBottomOf="@+id/btn9" />
+
+ <Button
+
+     android:id="@+id/btnSubtract"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="-"
+     android:textSize="20dp"
+     android:onClick="operatorEvent"
+     android:background="@color/black"
+     android:textColor="@color/orange"
+     app:layout_constraintStart_toEndOf="@+id/btn6"
+     app:layout_constraintTop_toBottomOf="@+id/btnMultiply"
+     app:layout_constraintHorizontal_bias="0"/>
+
+ <Button
+     android:id="@+id/btn1"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="1"
+     android:textSize="20dp"
+     android:onClick="numberEvent"
+     android:textColor="@color/white"
+     android:background="@color/black"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/btn4"
+     app:layout_constraintHorizontal_bias="0.01"/>
+
+ <Button
+     android:id="@+id/btn2"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="2"
+     android:textSize="20dp"
+     android:onClick="numberEvent"
+     android:textColor="@color/white"
+     android:background="@color/black"
+     app:layout_constraintStart_toEndOf="@+id/btn1"
+     app:layout_constraintTop_toBottomOf="@+id/btn5"
+     app:layout_constraintHorizontal_bias="0"/>
+
+ <Button
+     android:id="@+id/btn3"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="3"
+     android:textSize="20dp"
+     android:textColor="@color/white"
+     android:background="@color/black"
+     android:onClick="numberEvent"
+     app:layout_constraintStart_toEndOf="@+id/btn2"
+     app:layout_constraintTop_toBottomOf="@+id/btn6"
+     app:layout_constraintHorizontal_bias="0"/>
+
+ <Button
+     android:id="@+id/btnPlus"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="+"
+     android:textSize="21dp"
+     android:onClick="operatorEvent"
+     android:background="@color/black"
+     android:textColor="@color/orange"
+     app:layout_constraintStart_toEndOf="@+id/btn3"
+     app:layout_constraintTop_toBottomOf="@+id/btnSubtract"
+     app:layout_constraintHorizontal_bias="0"/>
+
+ <Button
+     android:id="@+id/flip"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="F"
+     android:textSize="21dp"
+     android:onClick="numberEvent"
+     android:background="@color/black"
+     android:textColor="@color/orange"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/btn1"
+     app:layout_constraintHorizontal_bias="0.01"/>
+
+ <Button
+     android:id="@+id/btn0"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="0"
+     android:textSize="21dp"
+     android:textColor="@color/white"
+     android:background="@color/black"
+     android:onClick="numberEvent"
+     app:layout_constraintStart_toEndOf="@+id/flip"
+     app:layout_constraintTop_toBottomOf="@+id/btn2"
+     app:layout_constraintHorizontal_bias="0"/>
+
+ <Button
+     android:id="@+id/btnPoint"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:onClick="numberEvent"
+     android:text="."
+     android:textColor="@color/white"
+     android:background="@color/black"
+     android:textSize="21dp"
+     app:layout_constraintStart_toEndOf="@+id/btn0"
+     app:layout_constraintTop_toBottomOf="@+id/btn3" />
+
+ <Button
+     android:id="@+id/btnEqual"
+     android:layout_width="101dp"
+     android:layout_height="70dp"
+     android:text="="
+     android:textColor="@color/orange"
+     android:textSize="21dp"
+android:onClick="equalEvent"
+     android:background="@color/black"
+     app:layout_constraintStart_toEndOf="@+id/btnPoint"
+     app:layout_constraintTop_toBottomOf="@+id/btnPlus"
+     app:layout_constraintHorizontal_bias="0"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
